@@ -1,0 +1,27 @@
+{
+  "name": "api_open_ra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r dotenv/config app.js dotenv_config_path=.env",
+    "dev": "nodemon -r dotenv/config app.js dotenv_config_path=.env.dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tasfa",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.1.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/multipart": "^7.2.0",
+    "@fastify/static": "^6.5.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.9.2",
+    "fastify-mssql": "^1.2.1",
+    "file_utils": "git+https://tassembedo@bitbucket.org/tassembedo/file-utils.git",
+    "jsonwebtoken": "^8.5.1",
+    "my_utils": "git+https://tassembedo@bitbucket.org/tassembedo/my-utils.git",
+    "nodemon": "^2.0.20"
+  }
+}
